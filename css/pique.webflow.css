@@ -1,0 +1,614 @@
+body {
+  display: block;
+  height: 804px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  background-color: transparent;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #333;
+  font-size: 12px;
+  line-height: 20px;
+}
+h1 {
+  width: auto;
+  margin: 10px 0px;
+  padding-bottom: 0px;
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 21px;
+  line-height: 37px;
+  font-weight: 300;
+  text-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px;
+}
+h2 {
+  margin: 10px 0px;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 700;
+}
+h3 {
+  margin: 0px;
+  padding-top: 26px;
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 0px;
+}
+h4 {
+  margin: 10px 0px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+h5 {
+  margin: 10px 0px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+h6 {
+  margin: 10px 0px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+}
+p {
+  display: block;
+  width: 320px;
+  height: auto;
+  margin: 0px auto 0px -11px;
+  padding-top: 28px;
+  padding-right: 0px;
+  padding-bottom: 54px;
+  float: none;
+  font-family: brandon-grotesque, sans-serif;
+  color: #2e2e2e;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: 0px;
+}
+.button {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-top: 64px;
+  margin-right: auto;
+  margin-left: 61px;
+  padding: 0px;
+  float: none;
+  border-radius: 0px;
+  background-color: transparent;
+  background-image: url('../images/Arrow-Left.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.56;
+  -webkit-transition: background-color 300ms ease;
+  -o-transition: background-color 300ms ease;
+  transition: background-color 300ms ease;
+  direction: ltr;
+  font-family: brandon-grotesque, sans-serif;
+  color: white;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: 0px;
+  text-decoration: none;
+  text-transform: none;
+  list-style-type: none;
+}
+.button:hover {
+  background-color: transparent;
+  opacity: 0.87;
+  -webkit-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+.button.left {
+  margin-top: -6px;
+  text-shadow: none;
+}
+.button.left.constient {
+  margin-top: 72px;
+  text-shadow: none;
+}
+.button.left.constient.w--current {
+  margin-top: 0px;
+  text-shadow: none;
+}
+.button.left.constient.pers {
+  margin-top: -2px;
+  text-shadow: none;
+}
+.button.left.constient.pers.w--current {
+  margin-top: -2px;
+  text-shadow: none;
+}
+.button.right {
+  margin-top: -6px;
+  margin-right: 61px;
+  margin-left: 0px;
+  float: right;
+  background-image: url('../images/Arrow-Right.png');
+  text-shadow: none;
+}
+.button.right.constient {
+  margin-top: 72px;
+  text-shadow: none;
+}
+.button.right.pers {
+  margin-top: -2px;
+  text-shadow: none;
+}
+.button.contacteazane {
+  width: 90px;
+  height: 40px;
+  margin-top: -39px;
+  margin-left: auto;
+  padding-top: 1px;
+  border-radius: 5px;
+  background-color: #ef9189;
+  background-image: none;
+  background-position: 0% 0%;
+  background-size: auto;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  opacity: 1;
+  -webkit-transition: none 0ms ease;
+  -o-transition: none 0ms ease;
+  transition: none 0ms ease;
+  text-align: center;
+}
+.button.contacteazane:hover {
+  background-color: #c7665d;
+  -webkit-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+.upper {
+  display: block;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 55px;
+  background-color: whitesmoke;
+  background-image: none;
+  background-position: 0% 0%;
+  background-size: auto;
+  background-repeat: repeat;
+  background-attachment: scroll;
+}
+.upper.hero {
+  height: 620px;
+  margin: 3px auto;
+  padding-top: 75px;
+  padding-bottom: 0px;
+  float: none;
+  background-color: #363b48;
+  background-image: url('../images/LandingPageBKRND-(wide).jpg');
+  background-position: 50% 100%;
+  background-repeat: repeat-x;
+  text-align: right;
+  text-shadow: none;
+}
+.upper.grey {
+  margin-top: -4px;
+  margin-bottom: 0px;
+  padding-top: 65px;
+  background-color: white;
+  background-image: none;
+  background-position: 0% 0%;
+  background-size: auto;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  text-align: center;
+}
+.upper.centered {
+  font-size: 17px;
+  text-align: center;
+}
+.upper.footer {
+  width: auto;
+  height: 90px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  background-color: #4a4a4a;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: left;
+}
+.nav-link {
+  display: inline;
+  margin-right: 11px;
+  margin-left: 11px;
+  -webkit-transition: color 300ms ease, background-color 300ms ease;
+  -o-transition: color 300ms ease, background-color 300ms ease;
+  transition: color 300ms ease, background-color 300ms ease;
+  font-family: brandon-grotesque, sans-serif;
+  color: rgba(69, 69, 69, 0.81);
+  font-size: 19px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: none;
+}
+.nav-link:hover {
+  color: black;
+}
+.nav-link.w--current {
+  font-family: Montserrat, sans-serif;
+}
+.nav-column {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 15px;
+  padding-right: 0px;
+  padding-left: 0px;
+  text-align: right;
+}
+.logo {
+  display: block;
+  width: 100px;
+  height: 41px;
+  margin-right: 0px;
+  margin-left: 0px;
+  float: left;
+  background-image: url('../images/Logo Pique.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.logo:hover {
+  background-image: url('../images/Logo-Pique-(Open).png');
+  opacity: 1;
+}
+.hero-heading {
+  font-family: Lato, sans-serif;
+  color: #292929;
+  font-size: 38px;
+  font-weight: 700;
+}
+.section-title {
+  margin-top: 33px;
+  margin-left: -3px;
+  padding-bottom: 27px;
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 46px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: -2px;
+}
+.frames {
+  width: 195px;
+  height: 144px;
+  margin-top: 19px;
+  margin-right: 0px;
+}
+.by-section {
+  text-align: left;
+}
+.footer-text {
+  display: inline-block;
+  margin-top: 0px;
+  padding-top: 35px;
+  font-family: brandon-grotesque, sans-serif;
+  color: #7d7d7d;
+  font-size: 15px;
+}
+.social-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 7px;
+  margin-left: 7px;
+  padding-top: 9px;
+  border-radius: 5px;
+  background-color: #525252;
+  -webkit-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+  text-align: center;
+}
+.social-icon:hover {
+  background-color: #ffe16a;
+}
+.right-footer-col {
+  height: auto;
+  margin-top: 26px;
+  padding-left: 0px;
+  text-align: right;
+}
+.nav-bar {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  background-color: white;
+}
+.desprenoi {
+  display: inline;
+  width: 130px;
+  margin-right: 0px;
+  padding-top: 9px;
+  padding-left: 0px;
+  float: none;
+  text-align: center;
+}
+.separate {
+  width: 500px;
+  margin-bottom: 8px;
+  margin-left: -65px;
+  padding-left: 5px;
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 19px;
+  line-height: 30px;
+  font-weight: 100;
+}
+.separate.laurentiu {
+  display: block;
+  margin: 0px auto;
+  padding-top: 28px;
+  padding-left: 0px;
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 29px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: -1px;
+}
+.ctc {
+  position: relative;
+  top: -2px;
+  bottom: 22px;
+  display: block;
+  margin: 25px auto 0px;
+  padding-bottom: 0px;
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 47px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -2px;
+  text-shadow: none;
+}
+.transparent {
+  opacity: 0.58;
+  font-weight: 400;
+  letter-spacing: -4px;
+  text-shadow: none;
+}
+.personalizat {
+  height: 620px;
+  font-weight: 300;
+  letter-spacing: -2px;
+  text-shadow: none;
+}
+.more {
+  margin-top: 0px;
+  padding-top: 46px;
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 46px;
+  font-weight: 400;
+  letter-spacing: -2px;
+}
+.consilier {
+  width: 450px;
+  margin-top: -8px;
+  margin-left: auto;
+  padding-top: 13px;
+  font-size: 19px;
+  text-align: center;
+  letter-spacing: 0px;
+}
+.persh {
+  display: block;
+  margin-top: 93px;
+  margin-left: 0px;
+  padding-top: 0px;
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 47px;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: -2px;
+}
+.conceptpersonalizat {
+  height: 620px;
+  float: none;
+  background-image: url('../images/BkrndPersonalizatSmall.jpg');
+  background-position: 50% 0px;
+  background-size: auto;
+  background-repeat: repeat-x;
+}
+.persp {
+  width: 700px;
+  float: left;
+  font-size: 37px;
+  line-height: 40px;
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: -1px;
+}
+.persp.perssub {
+  width: 500px;
+  margin-left: auto;
+  padding-top: 0px;
+  line-height: 46px;
+}
+.persp.transparentp {
+  width: 700px;
+  margin-top: 0px;
+  margin-left: auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-shadow: none;
+}
+.persp.transparentp.transparentcontainer {
+  width: 366px;
+  margin-top: 28px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  border-radius: 7px;
+  font-size: 20px;
+  text-shadow: none;
+}
+.persp.contientp {
+  margin-left: auto;
+  padding-top: 0px;
+  line-height: 47px;
+}
+.containerpersonalizat {
+  height: auto;
+}
+.perssubp {
+  margin-top: 23px;
+  padding: 32px 33px 36px 46px;
+  background-color: rgba(255, 255, 255, 0.70);
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+.perssubp.perssubsub {
+  width: 480px;
+  margin-top: -42px;
+  margin-left: auto;
+  padding-top: 36px;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.68);
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 20px;
+  line-height: 31px;
+  letter-spacing: 0px;
+}
+.perssubp.constientcontainer {
+  width: 418px;
+  margin-top: -37px;
+  margin-left: auto;
+  padding-top: 36px;
+  padding-right: 40px;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.concepttransparent {
+  display: block;
+  height: 620px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url('../images/BkrndTransparentSmall-3.jpg');
+  background-position: 50% 38%;
+  background-size: auto;
+  background-repeat: repeat-x;
+}
+.conceptconstient {
+  height: 620px;
+  background-image: url('../images/BkrndConstientSmall-2.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: repeat-x;
+}
+.icon1 {
+  height: 200px;
+}
+.welcomelogo {
+  position: fixed;
+  left: 0px;
+  top: 247px;
+  right: 0px;
+  bottom: 0px;
+  display: inline-block;
+  width: 300px;
+  height: 151px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url('../images/Logo-Pique-Big.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.welcomelogo:hover {
+  opacity: 0.92;
+}
+.welcomelogo:active {
+  width: 296px;
+}
+.welcomepage {
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (max-width: 991px) {
+  .nav-link {
+    margin-right: 7px;
+    margin-left: 7px;
+    font-size: 13px;
+  }
+  .frames {
+    width: 75%;
+  }
+}
+@media (max-width: 767px) {
+  .button {
+    margin-bottom: 10px;
+  }
+  .upper {
+    padding: 32px 15px;
+  }
+  .upper.hero {
+    padding-top: 42px;
+  }
+  .upper.footer {
+    text-align: center;
+  }
+  .nav-column {
+    padding-top: 19px;
+    text-align: center;
+  }
+  .logo {
+    margin-top: -14px;
+    float: none;
+  }
+  .hero-heading {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .frames {
+    width: 55%;
+    margin-bottom: 19px;
+  }
+  .footer-text {
+    margin-bottom: 22px;
+  }
+  .right-footer-col {
+    text-align: center;
+  }
+  .nav-bar {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  .brand-column {
+    text-align: center;
+  }
+}
+@media (max-width: 479px) {
+  .button {
+    display: block;
+  }
+  .upper {
+    padding-right: 11px;
+  }
+  .upper.hero {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .nav-link {
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .frames {
+    width: 75%;
+  }
+}
+
