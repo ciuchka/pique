@@ -3665,3 +3665,11 @@ Webflow.define('tabs', function($, _) {
   // Export module
   return api;
 });
+/**
+ * ----------------------------------------------------------------------
+ * Webflow: Interactions: Init
+ */
+Webflow.require('ix').init([
+  {"slug":"tagline","name":"Tagline","value":{"style":{"opacity":0},"triggers":[{"type":"load","preload":true,"stepsA":[{"title":"Wait","opacity":0,"wait":1000,"transition":"opacity 100ms ease-in-quart 0ms"},{"opacity":1,"transition":"opacity 1000ms ease-in-out-circ 0ms"}],"stepsB":[]}]}},
+  {"slug":"logo","name":"Logo","value":{"style":{"opacity":0},"triggers":[{"type":"load","preload":true,"loopA":true,"stepsA":[{"title":"Logo","opacity":1,"wait":300,"transition":"opacity 300ms ease-in-quart 0ms"}],"stepsB":[]}]}}
+]);
