@@ -495,14 +495,14 @@ p {
   margin-right: auto;
   margin-left: auto;
   background-image: url('../images/BkrndTransparentSmall-3.jpg');
-  background-position: 50% 38%;
+  background-position: center;
   background-size: auto;
   background-repeat: repeat-x;
 }
 .conceptconstient {
   height: 620px;
   background-image: url('../images/BkrndConstientSmall-2.jpg');
-  background-position: 50% 50%;
+  background-position: center;
   background-size: cover;
   background-repeat: repeat-x;
 }
