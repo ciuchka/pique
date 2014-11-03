@@ -27,8 +27,8 @@ function PageTransitions (type) {
 		pages.eq( current ).addClass( 'pt-page-current' );			
 	}
 
-	function nextPage(increment) {
-		var animation = 54;
+	function nextPage(increment) 
+	{
 
 		if( isAnimating ) {
 			return false;
@@ -53,7 +53,12 @@ function PageTransitions (type) {
 		var nextPage = pages.eq( current ).addClass( 'pt-page-current' ),
 			outClass = 'pt-page-rotateRoomLeftOut pt-page-ontop',
 			inClass = 'pt-page-rotateRoomLeftIn';
-			
+		
+		if (increment < 0 )
+		{
+		outClass = 'pt-page-rotateRoomRightOut pt-page-ontop',
+		inClass = 'pt-page-rotateRoomRightIn';
+		}
 		currPage.css('visibility','hidden');
 		nextPage.css('visibility','visible');
 		currPage.addClass( outClass ).on( animEndEventName, function() {
