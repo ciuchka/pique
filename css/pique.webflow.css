@@ -437,7 +437,7 @@ p {
   float: none;
   background-image: url('../images/BkrndPersonalizatSmall-2.jpg');
   background-position: 50% 0px;
-  background-size: auto;
+  background-size: cover;
   background-repeat: repeat-x;
 }
 .persp {
@@ -518,7 +518,7 @@ p {
   margin-left: auto;
   background-image: url('../images/BkrndTransparentSmall.jpg');
   background-position: 50% 38%;
-  background-size: auto;
+  background-size: cover;
   background-repeat: repeat-x;
 }
 .conceptconstient {
