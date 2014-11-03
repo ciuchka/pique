@@ -18,7 +18,7 @@ h1 {
   line-height: 37px;
   font-weight: 300;
   letter-spacing: -3px;
-  text-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px;
+  text-shadow: rgba(255, 255, 255, 0.23) 0px 1px 0px;
 }
 h2 {
   margin: 10px 0px;
@@ -152,7 +152,7 @@ p {
   width: 90px;
   height: 40px;
   margin-top: -39px;
-  margin-bottom: 19px;
+  margin-bottom: 42px;
   margin-left: auto;
   padding-top: 1px;
   float: none;
@@ -168,6 +168,7 @@ p {
   -o-transition: none 0ms ease;
   transition: none 0ms ease;
   text-align: center;
+  text-shadow: none;
 }
 .button.contacteazane:hover {
   background-color: #c7665d;
@@ -190,6 +191,7 @@ p {
   background-attachment: scroll;
 }
 .upper.hero {
+  display: block;
   height: 620px;
   margin: 0px auto;
   padding-top: 0px;
@@ -320,7 +322,7 @@ p {
   text-align: center;
 }
 .social-icon:hover {
-  background-color: #ffe16a;
+  background-color: #636363;
 }
 .right-footer-col {
   height: auto;
@@ -433,7 +435,7 @@ p {
 .conceptpersonalizat {
   height: 620px;
   float: none;
-  background-image: url('../images/BkrndPersonalizatSmall.jpg');
+  background-image: url('../images/BkrndPersonalizatSmall-2.jpg');
   background-position: 50% 0px;
   background-size: auto;
   background-repeat: repeat-x;
@@ -514,7 +516,7 @@ p {
   height: 620px;
   margin-right: auto;
   margin-left: auto;
-  background-image: url('../images/BkrndTransparentSmall-3.jpg');
+  background-image: url('../images/BkrndTransparentSmall.jpg');
   background-position: 50% 38%;
   background-size: auto;
   background-repeat: repeat-x;
@@ -614,41 +616,74 @@ p {
   display: none;
   height: 100%;
   margin-top: 0px;
-  background-color: rgba(0, 0, 0, 0.29);
+  background-color: rgba(0, 0, 0, 0.52);
+  opacity: 1;
+  font-size: 14px;
   text-align: center;
   text-shadow: none;
 }
 .modal-window {
   display: block;
-  width: 700px;
-  height: 300px;
-  margin-top: 139px;
+  width: 500px;
+  height: 200px;
+  margin-top: 255px;
   margin-right: auto;
   margin-left: auto;
   padding: 16px;
-  border-radius: 13px;
+  border-radius: 9px;
   background-color: white;
   text-shadow: none;
 }
 .phone {
-  margin-top: 78px;
-  text-shadow: none;
-}
-.close {
-  float: none;
-  font-family: brandon-grotesque, sans-serif;
-  font-size: 16px;
-  text-align: right;
+  width: 20%;
+  margin-top: 24px;
+  margin-right: -8px;
+  padding-left: 40px;
+  opacity: 0.68;
   text-shadow: none;
 }
 .modal-link {
   display: inline-block;
-  background-color: rgba(69, 69, 69, 0.81);
+  background-color: transparent;
   font-family: brandon-grotesque, sans-serif;
   font-size: 19px;
   text-shadow: none;
 }
 .modal-link:hover {
+  text-shadow: none;
+}
+.close-modal {
+  padding-top: 7px;
+  padding-right: 9px;
+  float: right;
+  font-family: brandon-grotesque, sans-serif;
+  color: #a6a6a6;
+  font-size: 15px;
+  font-weight: 100;
+  text-align: right;
+  text-decoration: none;
+  text-shadow: none;
+}
+.close-modal:hover {
+  color: black;
+  text-shadow: none;
+}
+.phonenumber {
+  padding-top: 16px;
+  float: none;
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 39px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  text-shadow: none;
+}
+.numecontact {
+  padding-top: 18px;
+  padding-bottom: 0px;
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: -1px;
   text-shadow: none;
 }
 html.w-mod-js *[data-ix="tagline"] {
