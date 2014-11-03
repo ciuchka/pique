@@ -27,7 +27,7 @@ function PageTransitions (type) {
 		pages.eq( current ).addClass( 'pt-page-current' );			
 	}
 
-	function nextPage(options ) {
+	function nextPage(increment) {
 		var animation = 54;
 
 		if( isAnimating ) {
@@ -37,14 +37,17 @@ function PageTransitions (type) {
 		isAnimating = true;
 		
 		var currPage = pages.eq( current );
+		current += increment;
 
+		if (current < 0)
+		{
+			current = pagesCount - 1;
+		}
+		else if (current > pagesCount - 1)	
+		{
+			current = 0;
+		}
 		
-			if( current < pagesCount - 1 ) {
-				++current;
-			}
-			else {
-				current = 0;
-			}
 		
 
 		var nextPage = pages.eq( current ).addClass( 'pt-page-current' ),
@@ -98,8 +101,12 @@ function PageTransitions (type) {
 $(document).ready(function()
 {
 var x = new PageTransitions();
-$("a.button").on("click", function()
+$("a.button.left").on("click", function()
 		{ 		
-		x.nextPage();
+		x.nextPage(-1);
+		});
+$("a.button.right").on("click", function()
+		{ 		
+		x.nextPage(1);
 		});
 });
