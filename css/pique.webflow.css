@@ -18,7 +18,7 @@ h1 {
   line-height: 37px;
   font-weight: 300;
   letter-spacing: -3px;
-  text-shadow: rgba(255, 255, 255, 0.23) 0px 1px 0px;
+  text-shadow: rgba(255, 255, 255, 0.20) 0px 1px 0px;
 }
 h2 {
   margin: 10px 0px;
@@ -357,13 +357,14 @@ p {
 .separate.laurentiu {
   display: block;
   margin: 0px auto;
-  padding-top: 28px;
+  padding-top: 21px;
   padding-left: 0px;
   font-family: brandon-grotesque, sans-serif;
   font-size: 29px;
   font-weight: 300;
   text-align: center;
   letter-spacing: -1px;
+  text-shadow: none;
 }
 .ctc {
   position: relative;
@@ -437,7 +438,7 @@ p {
   float: none;
   background-image: url('../images/BkrndPersonalizatSmall-2.jpg');
   background-position: 50% 0px;
-  background-size: cover;
+  background-size: auto;
   background-repeat: repeat-x;
 }
 .persp {
@@ -518,7 +519,7 @@ p {
   margin-left: auto;
   background-image: url('../images/BkrndTransparentSmall.jpg');
   background-position: 50% 38%;
-  background-size: cover;
+  background-size: auto;
   background-repeat: repeat-x;
 }
 .conceptconstient {
@@ -564,7 +565,7 @@ p {
   float: none;
   clear: none;
   border-radius: 8px;
-  text-align: left;
+  text-align: center;
   list-style-type: none;
   text-shadow: none;
 }
@@ -625,7 +626,7 @@ p {
 .modal-window {
   display: block;
   width: 500px;
-  height: 200px;
+  height: 270px;
   margin-top: 255px;
   margin-right: auto;
   margin-left: auto;
@@ -681,8 +682,23 @@ p {
   padding-top: 18px;
   padding-bottom: 0px;
   font-family: brandon-grotesque, sans-serif;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 300;
+  letter-spacing: -1px;
+  text-shadow: none;
+}
+.designerinterior {
+  padding-top: 11px;
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 17px;
+  font-weight: 100;
+  text-shadow: none;
+}
+.laurentiu {
+  padding-top: 13px;
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 26px;
+  font-weight: 400;
   letter-spacing: -1px;
   text-shadow: none;
 }

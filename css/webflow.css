@@ -72,6 +72,9 @@ a:focus {
 .w-hidden {
   display: none;
 }
+html[w-dynpage] [w-cloak] {
+  color: transparent !important;
+}
 h1,
 h2,
 h3,
@@ -1643,7 +1646,6 @@ textarea.w-select {
   display: block;
 }
 .w-dyn-empty {
-  display: none;
   padding: 10px;
   background-color: #dddddd;
 }
