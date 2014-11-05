@@ -459,7 +459,7 @@ p {
   float: none;
   background-image: url('../images/BkrndPersonalizatSmall-2.jpg');
   background-position: 50% 0px;
-  background-size: cover;
+  background-size: auto;
   background-repeat: repeat-x;
 }
 .persp {
@@ -537,18 +537,19 @@ p {
 }
 .concepttransparent {
   display: block;
+  height: 620px;
   margin-right: auto;
   margin-left: auto;
   background-image: url('../images/BkrndTransparentSmall.jpg');
   background-position: 50% 38%;
-  background-size: cover;
+  background-size: auto;
   background-repeat: repeat-x;
 }
 .conceptconstient {
   height: 620px;
   background-image: url('../images/BkrndConstientSmall-2.jpg');
   background-position: 50% 50%;
-  background-size: cover;
+  background-size: auto;
   background-repeat: repeat-x;
 }
 .icon1 {
