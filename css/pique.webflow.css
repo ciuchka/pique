@@ -18,7 +18,7 @@ h1 {
   line-height: 37px;
   font-weight: 300;
   letter-spacing: -3px;
-  text-shadow: rgba(255, 255, 255, 0.20) 0px 1px 0px;
+  text-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px;
 }
 h2 {
   margin: 10px 0px;
@@ -111,8 +111,15 @@ p {
   transform: none;
 }
 .button.left {
-  margin-top: -6px;
+  position: fixed;
+  left: 0px;
+  top: 590px;
+  bottom: 0px;
+  margin-top: 0px;
   float: left;
+  text-shadow: none;
+}
+.button.left.w--current {
   text-shadow: none;
 }
 .button.left.constient {
@@ -133,11 +140,25 @@ p {
   text-shadow: none;
 }
 .button.right {
-  margin-top: -6px;
+  position: fixed;
+  top: 590px;
+  right: 0px;
+  bottom: 0px;
+  margin-top: 0px;
   margin-right: 61px;
   margin-left: 0px;
   float: right;
   background-image: url('../images/Arrow-Right.png');
+  text-shadow: none;
+}
+.button.right:hover {
+  -webkit-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+  text-shadow: none;
+}
+.button.right.w--current {
   text-shadow: none;
 }
 .button.right.constient {
@@ -478,6 +499,7 @@ p {
   margin-left: auto;
   padding-top: 0px;
   line-height: 47px;
+  text-shadow: none;
 }
 .containerpersonalizat {
   height: auto;
@@ -511,6 +533,7 @@ p {
   border-radius: 4px;
   font-size: 20px;
   font-weight: 300;
+  text-shadow: none;
 }
 .concepttransparent {
   display: block;

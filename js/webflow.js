@@ -1095,6 +1095,11 @@ Webflow.define('forms', function($, _) {
   'use strict';
 
   var api = {};
+
+  var FORM_API_HOST = 'https://webflow.com';
+  var FORM_SUBMIT_HOST = 'https://webflow.com';
+  var FORM_OLDIE_HOST = 'http://formdata.webflow.com';
+
   var $doc = $(document);
   var $forms;
   var loc = window.location;
@@ -1256,11 +1261,11 @@ Webflow.define('forms', function($, _) {
     // Read site ID
     // NOTE: If this site is exported, the HTML tag must retain the data-wf-site attribute for forms to work
     if (!siteId) { afterSubmit(data); return; }
-    var url = 'https://webflow.com/api/v1/form/' + siteId;
+    var url = FORM_API_HOST + '/api/v1/form/' + siteId;
 
     // Work around same-protocol IE XDR limitation - without this IE9 and below forms won't submit
-    if (retro && url.indexOf('https://webflow.com') >= 0) {
-      url = url.replace('https://webflow.com/', 'http://formdata.webflow.com/');
+    if (retro && url.indexOf(FORM_SUBMIT_HOST) >= 0) {
+      url = url.replace(FORM_SUBMIT_HOST, FORM_OLDIE_HOST);
     }
 
     $.ajax({
@@ -2096,6 +2101,7 @@ Webflow.define('slider', function($, _) {
 
       // Swipe event
       if (evt.type == 'swipe') {
+        if (Webflow.env('editor')) return;
         if (options.direction == 'left') return next(data)();
         if (options.direction == 'right') return previous(data)();
         return;
@@ -3004,6 +3010,7 @@ Webflow.define('navbar', function($, _) {
   var $navbars;
   var designer;
   var inApp = Webflow.env();
+  var touch = Webflow.env.touch;
   var overlay = '<div class="w-nav-overlay" data-wf-ignore />';
   var namespace = '.w-nav';
   var buttonOpen = 'w--open';
@@ -3075,6 +3082,12 @@ Webflow.define('navbar', function($, _) {
       addOverlay(data);
       data.button.on('tap' + namespace, toggle(data));
       data.menu.on('tap' + namespace, 'a', navigate(data));
+
+      // Prevent delayed menu clicks on touch devices
+      if (touch) {
+        data.menu.on('touchstart' + namespace, 'a', touchStart(data));
+        data.menu.on('click' + namespace, 'a', touchClick(data));
+      }
     }
 
     // Trigger initial resize
@@ -3147,8 +3160,11 @@ Webflow.define('navbar', function($, _) {
   }
 
   function toggle(data) {
+    // Debounce toggle to wait for accurate open state
     return _.debounce(function(evt) {
       data.open ? close(data) : open(data);
+      // Reset touch target to prevent late menu clicks
+      data.touchTarget = null;
     });
   }
 
@@ -3156,6 +3172,9 @@ Webflow.define('navbar', function($, _) {
     return function(evt) {
       var link = $(this);
       var href = link.attr('href');
+
+      // Avoid late clicks on touch devices
+      if (touch && data.touchTarget !== evt.currentTarget) return;
 
       // Close when navigating to an in-page anchor
       if (href && href.indexOf('#') === 0 && data.open) {
@@ -3170,7 +3189,7 @@ Webflow.define('navbar', function($, _) {
     // Unbind previous tap handler if it exists
     if (data.outside) $doc.off('tap' + namespace, data.outside);
 
-    // Close menu when tapped outside
+    // Close menu when tapped outside, debounced to wait for state
     return _.debounce(function(evt) {
       if (!data.open) return;
       var menu = $(evt.target).closest('.w-nav-menu');
@@ -3178,6 +3197,18 @@ Webflow.define('navbar', function($, _) {
         close(data);
       }
     });
+  }
+
+  function touchStart(data) {
+    return function(evt) {
+      data.touchTarget = evt.currentTarget;
+    };
+  }
+
+  function touchClick(data) {
+    return function(evt) {
+      if (data.touchTarget !== evt.currentTarget) evt.preventDefault();
+    };
   }
 
   function resize(i, el) {
